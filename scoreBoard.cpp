@@ -88,7 +88,7 @@ public:
         char result;
         for (int i = 1; i <= 6*over; i++)
         {
-            cout << "enter the result(0 to 6 )(w for wickets and e for extras)\t:";
+            cout << "enter the result(0 to 6 )(w for wickets, d for wide ball and n for no ball)\t:";
             cin >> result; // Change the w to lower
             
             over_balls = i%6; // over updated
@@ -218,11 +218,6 @@ int main()
     t[0].scoreBoard();
     t[0].totalScore();
 
-    // else
-    // {
-    //     innings_1_batting_team = toss_lost_by_team;
-    //     t0.inningsStarted(&t[toss_lost_by_team], &t[toss_won_by_team], over);
-    // }
     // Innings 1 stores the 0 or 1 which mean we can get the no. of runs scored in innings 1
     cout << "Total runs required to win the match \t:" << t[0].total_runs_scored_by_team + 1 << endl;
 
